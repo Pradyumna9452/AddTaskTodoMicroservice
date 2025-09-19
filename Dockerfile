@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy the application files into the container
 COPY . .
 
+
 # Install necessary packages
 RUN apt-get update && apt-get install -y unixodbc unixodbc-dev
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
